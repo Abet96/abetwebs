@@ -1,1 +1,110 @@
-!doctype
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikasi LKS Cloud Computing - Portal Informasi">
+    <title>LKS Cloud Computing - Beranda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGASI -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CloudApp</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Tentang</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Selamat Datang di CloudApp</h2>
+                <p>Aplikasi web sederhana yang di-deploy ke layanan cloud computing.
+                   Dibuat untuk Lomba Kompetensi Siswa (LKS) SMK Ma'arif NU
+                   Tingkat Jawa Timur 2026.</p>
+                <a href="about.html" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR SECTION -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Fitur Aplikasi</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#9729;</div>
+                    <h3>Cloud Deployment</h3>
+                    <p>Aplikasi di-hosting menggunakan layanan cloud modern seperti Vercel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128187;</div>
+                    <h3>Responsive Design</h3>
+                    <p>Tampilan menyesuaikan berbagai ukuran layar, dari desktop hingga mobile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128274;</div>
+                    <h3>Keamanan</h3>
+                    <p>Menggunakan HTTPS dan praktik keamanan dasar dalam pengembangan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API DATA SECTION (FITUR TAMBAHAN - 10 POIN) -->
+    <section class="api-section">
+        <div class="container">
+            <h2 class="section-title">Quote of the Day</h2>
+            <p class="section-subtitle">Data diambil dari API publik secara real-time</p>
+            <div class="quote-container">
+                <div id="quote-box" class="quote-box">
+                    <p id="quote-text" class="quote-text">Memuat quote...</p>
+                    <p id="quote-author" class="quote-author">- Loading...</p>
+                </div>
+                <button id="new-quote-btn" class="btn btn-secondary">Quote Baru</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRUD SECTION (FITUR TAMBAHAN - 10 POIN) -->
+    <section class="crud-section">
+        <div class="container">
+            <h2 class="section-title">Catatan Sederhana</h2>
+            <p class="section-subtitle">CRUD menggunakan LocalStorage</p>
+            <div class="crud-container">
+                <div class="crud-form">
+                    <input type="text" id="note-input" class="form-input" placeholder="Tulis catatan baru...">
+                    <button id="add-note-btn" class="btn btn-primary">Tambah</button>
+                </div>
+                <ul id="notes-list" class="notes-list">
+                    <!-- Notes akan ditambahkan di sini oleh JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CloudApp - LKS Cloud Computing</p>
+            <p>SMK Ma'arif NU Jawa Timur</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+</body>
+</html>
